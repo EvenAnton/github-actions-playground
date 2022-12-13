@@ -2,6 +2,10 @@ name: playground
 
 on:
   workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag or branch'
+        required: true
   push:
     tags:
       - "*"
@@ -15,3 +19,4 @@ jobs:
           echo "Tag name from GITHUB_REF_NAME: $GITHUB_REF_NAME:"
           echo "Tag name from github.ref_name: ${{  github.ref_name }}"
           echo "github.ref: ${{ github.ref }}"
+          echo "github.event.inputs.release_tag: ${{ github.event.inputs.release_tag }}"

@@ -10,6 +10,7 @@ on:
   #   tags:
   #     - "*"
   release:
+    types: [published]
 
 jobs:
   get-tag:

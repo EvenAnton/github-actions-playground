@@ -7,14 +7,12 @@ on:
         description: 'Release tag or branch'
         required: true
   push:
-    branches:
-      - master
     tags:
       - "*"
 
 jobs:
   get-tag:
-    if: ${{ github.event.base_ref == 'refs/heads/main' }}
+    if: ${{ github.event.base_ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
     steps:
       - name: GitHub Tag Name example

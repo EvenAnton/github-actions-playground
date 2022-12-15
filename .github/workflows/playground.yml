@@ -21,4 +21,4 @@ jobs:
           echo "Tag name from github.ref_name: ${{  github.ref_name }}"
           echo "github.ref: ${{ github.ref }}"
           echo "github.event.inputs.release_tag: ${{ github.event.inputs.release_tag }}"
-          echo "github.event.base_ref: ${{ github.event.base_ref }}
+          echo "github.event.base_ref: ${{ github.event.base_ref }}"

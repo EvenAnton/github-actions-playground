@@ -12,3 +12,5 @@ jobs:
     
     - name: Run Bandit Action
       uses: shundor/python-bandit-scan@v1.0
+      with:
+        exit_zero: true

@@ -2,6 +2,7 @@ name: Bandit Security Report
 
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   generate-report:

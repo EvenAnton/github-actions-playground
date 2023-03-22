@@ -24,3 +24,11 @@ jobs:
           echo "github.ref: ${{ github.ref }}"
           echo "github.event.inputs.release_tag: ${{ github.event.inputs.release_tag }}"
           echo "github.event.base_ref: ${{ github.event.base_ref }}"
+  
+  filesystem:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3.4.0
+    - run: pwd
+    - run: ls -l
+    

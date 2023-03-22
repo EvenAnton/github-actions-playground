@@ -31,4 +31,5 @@ jobs:
     - uses: actions/checkout@v3.4.0
     - run: pwd
     - run: ls -l
-    
+    - run: mkdir hello
+    - run: ls -l
